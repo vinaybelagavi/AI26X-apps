@@ -16,6 +16,7 @@ def generate_synthetic_dataset(
     num_chunks = num_samples // chunk_size
 
     # create CSV file and write header
+    #adding a new comment to the file!
     header = [f"feature_{i+1}" for i in range(num_features)] + ["target"]
     with open(file_path, "w") as f:
         f.write(",".join(header) + "\n")
